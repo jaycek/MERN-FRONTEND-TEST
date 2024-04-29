@@ -20,7 +20,7 @@ const SignupForm = () => {
     const handleSubmit = async (e) =>{
         e.preventDefault();
         try{
-            const response = await axios.post("https://mern-test-mtj3.onrender.com/signup",formData);
+            const response = await axios.post("https://mern-test-mtj3.onrender.com/users",formData);
             console.log(response.data)
         }catch(error){
             console.error(error)
