@@ -8,7 +8,7 @@ const Blogs = () => {
     useEffect(()=>{
         const fetchData = async (req,res)=>{
             try {
-               const posts= await axios.get('http://localhost:3000/posts')
+               const posts= await axios.get('https://mern-test-mtj3.onrender.com/posts')
                setPosts(posts.data)
                console.log(posts.data)
             } catch (error) {
